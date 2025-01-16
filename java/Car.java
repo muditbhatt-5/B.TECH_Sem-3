@@ -39,11 +39,18 @@ public void start()
 public void actionPerformed(ActionEvent e)
  {
   String s=e.getActionCommand();
+  try{
+   
   if(s.equals("Forward"))
   {
    msg="Forward";
    repaint();
   }
+  }
+  catch(Exception e)
+   {
+    System.out.println(e);
+   }
   else if(s.equals("Stop"))
   {
    msg="  ";
